@@ -1,60 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name='description' content=''>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>esto va a ser un blog en foundation</title>
+   <link rel="stylesheet" href="Basicos/css/foundation.css" />
+   <script src="Basicos/js/vendor/modernizr.js"></script>
 </head>
 <body>
-	<header class='header'>
-		<figure class="header_figure">
-			<img src="img/logo.jpg" alt="">
-		</figure>
-		<h1 class="header_title">Curso Front</h1>
-		<nav class='nav'>
-			<ul class='nav_ul'>
-				<li class='nav_item'><a class="nav_item_link" href="">HTML</a></li>
-				<li class='nav_item'><a class="nav_item_link" href="">HTML</a></li>
-				<li class='nav_item'><a class="nav_item_link" href="">HTML</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<article class='item'>
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<h2></h2>
-			<div class='data_item'>
-				<span>texto descriptivo</span>
-			</div>
-		</article>
-		<article class='item'>
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<h2></h2>
-			<div class='data_item'>
-				<span>texto descriptivo</span>
-			</div>
-		</article>
-		<article class='item'>
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<h2></h2>
-			<div class='data_item'>
-				<span>texto descriptivo</span>
-			</div>
-		</article>
-	</section>
-	<footer>
-		<strong>Mejorando.la</strong>
-		<p>Parrafo normal</p>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/index.js"></script>
+  <header class="row">
+    <h1>Basado en foundation</h1>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Intranet</a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="#">Right Button Active</a></li>
+          <li class="has-dropdown">
+            <a href="#">Right Button Dropdown</a>
+            <ul class="dropdown">
+              <li><a href="#">First link in dropdown</a></li>
+              <li class="active"><a href="#">Active link in dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li><a href="#">Left Nav Button</a></li>
+          <li class="has-form">
+            <div class="row collapse">
+              <div class="large-8 small-9 columns">
+                <input type="text" placeholder="Buscar">
+              </div>
+              <div class="large-4 small-3 columns">
+                <a href="#" class="alert button expand">Search</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="row">
+    <section class="small-12 medium-8 large-7 columns">
+      <article class="row panel">
+        <p>
+          <h2>Titulo del post</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque consequuntur ratione perferendis, hic quod. Veniam ducimus, dicta quis earum, ut qui.
+        </p>
+        <a class='button small radius round' href="">Ir al post</a>
+        <a class='button medium radius round' href="">Ir al post</a>
+        <a class='button large radius round' href="">Ir al post</a>
+      </article> 
+      <article class="row panel">
+        <p>
+          <h2>Titulo del post</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque consequuntur ratione perferendis, hic quod. Veniam ducimus, dicta quis earum, ut qui.
+        </p>
+          
+        <a class='button radius' href="">Ir al post</a>
+      </article>
+    </section>
+    <section class="small-12 medium-4 large-4 columns">
+        <section class="row" data-equalizer>
+          <article class="small-6 column panel" data-equalizer-watch>
+            <p>
+              <h2>Titulo del post2</h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque consequuntur ratione perferendis, hic quod. Veniam ducimus, dicta quis earum, ut qui.
+            </p>
+          </article>
+          <article class="small-6 column panel" data-equalizer-watch>
+            <p>
+              <h2>Titulo del post2</h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque 
+            </p>
+          </article>
+        </section>
+        <section class="row" data-equalizer>
+          <article class="small-6 column panel" data-equalizer-watch>
+            <p>
+              <h2>Titulo del post2</h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque consequuntur ratione perferendis, hic quod. Veniam ducimus, dicta quis earum, ut qui.
+            </p>
+          </article>
+          <article class="small-6 column panel" data-equalizer-watch>
+            <p>
+              <h2>Titulo del post2</h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque .
+            </p>
+          </article>
+        </section>
+    </section>
+  </section>
+ <!--  <section class="row">
+    <article class="columns">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum ipsum, dolore ab sequi saepe eveniet sed doloremque consequuntur ratione perferendis, hic quod. Veniam ducimus, dicta quis earum, ut qui.
+    </article>
+  </section> -->
+ <script src="Basicos/js/vendor/jquery.js"></script>
+|<script src="Basicos/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
